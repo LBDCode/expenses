@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'backendapp',
     'rest_framework',
     'frontendapp',
+    'webpack_loader',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -116,6 +118,22 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+# webpack loader settings
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': not DEBUG,
+        'BUNDLE_DIR_NAME': 'frontend/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
+
+# rest framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

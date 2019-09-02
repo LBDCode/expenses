@@ -1,3 +1,5 @@
+var BundleTracker  = require('webpack-bundle-tracker');
+
 
 module.exports = {
 
@@ -6,6 +8,9 @@ module.exports = {
     filename: 'main.js',
     path: __dirname + '/frontendapp/static/frontend'
   },
+  plugins: [
+      new BundleTracker({path: __dirname, filename: 'webpack-stats.json'})
+    ],
   module: {
     rules: [
       {
