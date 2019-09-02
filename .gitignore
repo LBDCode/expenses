@@ -1,0 +1,9 @@
+.venv
+.expensevenv
+node_modules
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
