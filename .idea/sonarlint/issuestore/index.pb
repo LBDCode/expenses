@@ -30,3 +30,11 @@ M
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 F
 expensevenv/.gitignore,4\9\497cdd157aa324018287fe86dc67426a79e45051
+X
+(app/frontendapp/src/components/login.jsx,2\3\2339c5807c5915e22afec72ee7ad00c8cc66d703
+F
+app/webpack-stats.json,e\0\e093747a83097f5b545017878f9ed90579fd25a3
+V
+&app/frontendapp/src/reducer/reducer.js,7\1\71186eddb3f4fb1dd040abdd6cbb2b31a2e40130
+S
+#app/frontendapp/src/actions/auth.js,9\3\93c7fcf8abdc4987f4974e923419c5ef374b95cf

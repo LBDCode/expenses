@@ -1,4 +1,5 @@
 import jQuery from 'jquery';
+import { ADD_ARTICLE } from "../js/constants/action-types";
 
 function getCookie(name) {
   let cookieValue = null;
@@ -46,4 +47,8 @@ export function login(username, password) {
         }
       });
   };
+}
+
+export function addArticle(payload) {
+  return { type: ADD_ARTICLE, payload };
 }

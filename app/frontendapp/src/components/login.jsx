@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { login } from '../actions/auth';
+import { login } from '../actions';
 
 class Login extends Component {
   static propTypes = {
@@ -27,7 +27,7 @@ class Login extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <div className="col-md-offset-5 col-md-3">
-          <h4>Blueprint Login</h4>
+          <h4>Sample Login</h4>
           <div className="input-group mb-3">
             <input
               type="text"
