@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import Login from './components/login.jsx';
+import App from './app.jsx'
 import rootReducer from './js/reducer/index';
 import store from "./js/store/index";
 import { addArticle } from "./actions/index";
@@ -14,8 +15,4 @@ window.addArticle = addArticle;
 
 /* eslint-enable */
 
-ReactDOM.render((
-  <Provider store={store}>
-    <Login />
-  </Provider>
-), document.getElementById('react-app'));
+ReactDOM.render(<App />, document.getElementById('root'));
